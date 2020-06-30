@@ -1,4 +1,5 @@
 # Set ZSH_CACHE_DIR to the path where cache files should be created
+
 # or else we will use the default cache/
 if [[ -z "$ZSH_CACHE_DIR" ]]; then
   ZSH_CACHE_DIR="$ZSH/cache"
@@ -53,7 +54,7 @@ fi
 
 # Save the location of the current completion dump file.
 if [ -z "$ZSH_COMPDUMP" ]; then
-  ZSH_COMPDUMP="${ZDOTDIR:-${HOME}}/.zcompdump-${SHORT_HOST}-${ZSH_VERSION}"
+  ZSH_COMPDUMP="${ZDOTDIR:-${HOME}}/.cache/zsh/zcompdump-${SHORT_HOST}-${ZSH_VERSION}"
 fi
 
 # Construct zcompdump OMZ metadata
